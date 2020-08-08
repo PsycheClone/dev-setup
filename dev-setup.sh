@@ -20,7 +20,6 @@ cd dev-setup
 cd
 mkdir .cfg
 git clone --bare git@github.com:PsycheClone/dotfiles.git $HOME/.cfg
-alias c='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
-c checkout
-c config --local status.showUntrackedFiles no
+/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME checkout
+/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME config --local status.showUntrackedFiles no
 
