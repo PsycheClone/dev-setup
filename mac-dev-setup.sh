@@ -14,12 +14,14 @@ cd dev-setup
 ./installp.sh mac/ZSH
 ./installp.sh mac/PYTHON
 ./installp.sh mac/NEOVIM
-./installp.sh mac/ALACRITTY
 ./installp.sh mac/NVM
 
 cd
 mkdir .cfg
 git clone --bare git@github.com:PsycheClone/dotfiles.git $HOME/.cfg
+mkdir -p temp-git-files
+mv $HOME/.zshrc temp-git-files/
+mv $HOME/.oh-my-zsh/themes/dieter.zsh-theme temp-git-files/
 /usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME checkout
 /usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME config --local status.showUntrackedFiles no
 
