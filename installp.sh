@@ -12,7 +12,7 @@ fi
 if [ ! -f "$XDG_CACHE_HOME/dev-setup/$1" ]; then
     sh "$HOME/dev-setup/packages/$1".sh && \
         touch $XDG_CACHE_HOME/dev-setup/$1 && \
-        echo "${GREEN}$1 Done! ${BLUE}Created $XDG_CACHE_HOME/dev-setup/$1 ...${NOCOLOR}"
+        echo -e "${GREEN}$1 Done! ${BLUE}Created $XDG_CACHE_HOME/dev-setup/$1 ...${NOCOLOR}"
 else
     echo -e "${GREEN}$XDG_CACHE_HOME/dev-setup/$1 exists! ${BLUE}Skipping...${NOCOLOR}"
 fi

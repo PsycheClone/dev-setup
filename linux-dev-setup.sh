@@ -10,12 +10,12 @@ cd
 git clone git@github.com:PsycheClone/dev-setup.git
 cd dev-setup
 
-./installp.sh COMMON
-./installp.sh ZSH
-./installp.sh PYTHON
-./installp.sh NEOVIM
-./installp.sh ALACRITTY
-./installp.sh NVM
+./installp.sh linux/COMMON
+./installp.sh linux/ZSH
+./installp.sh linux/PYTHON
+./installp.sh linux/NEOVIM
+./installp.sh linux/ALACRITTY
+./installp.sh linux/NVM
 
 cd
 mkdir .cfg
